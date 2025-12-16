@@ -1,7 +1,7 @@
 ## Description
 Created project that gets the latest location of the ISS satalite ever 1 second and presents it to the UI
 
-## what I learned
+## What I learned
 - How to get latest updates and continuously update UI screen
 - HTTP vs HTTPS apis have different permissions by default
 - In Android Studio HTTPS (encrypted) is allowed but HTTP (unencrypted) is blocked unless explicitly permitted
