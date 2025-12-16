@@ -5,7 +5,6 @@ import androidx.lifecycle.viewModelScope
 import com.example.satelliteapiconsumption.data.model.ISSModel
 import com.example.satelliteapiconsumption.repository.IssLocationRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
-import kotlinx.coroutines.NonCancellable.isActive
 import kotlinx.coroutines.currentCoroutineContext
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -24,10 +23,10 @@ class ISSLocationViewModel @Inject constructor(
     val uiState: StateFlow<ISSLocationState> = _uiState
 
     init {
-        loadData()
+        pollISSLocation()
     }
 
-    fun loadData(){
+    fun pollISSLocation(){
         viewModelScope.launch {
             // this while loop uses inActive which returns true when coroutine is alive
             // used for polling or getting periodic update from api call where data is constantly changing
