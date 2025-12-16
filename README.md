@@ -42,3 +42,7 @@ Created project that gets the latest location of the ISS satalite ever 1 second 
 https://github.com/user-attachments/assets/ea9b185d-e4c4-4f92-b9de-0514f495beca
 
 
+# API Docs
+https://publicapi.dev/open-notify-api
+
+
