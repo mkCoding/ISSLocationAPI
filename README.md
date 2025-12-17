@@ -1,5 +1,5 @@
 ## Description
-Created project that gets the latest location of the ISS satalite ever 1 second and presents it to the UI
+Created project that gets the latest location of the **ISS (International Space Station)** satalite ever 1 second and presents it to the UI
 
 ## What I learned
 - How to get latest updates and continuously update UI screen
